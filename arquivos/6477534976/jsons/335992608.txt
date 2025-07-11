@@ -1,0 +1,52 @@
+[
+  {
+    "update_id": 335992608,
+    "message": {
+      "message_id": 560,
+      "from": {
+        "id": 6477534976,
+        "is_bot": false,
+        "first_name": "Aerty",
+        "last_name": "Santos",
+        "language_code": "en"
+      },
+      "chat": {
+        "id": 6477534976,
+        "first_name": "Aerty",
+        "last_name": "Santos",
+        "type": "private"
+      },
+      "date": 1695145492,
+      "photo": [
+        {
+          "file_id": "AgACAgEAAxkBAAICMGUJ3hTaUQYNk4H3A8gIDKhaoYiKAAJ5rTEbIlVQRIUBimcn_9CAAQADAgADcwADMAQ",
+          "file_unique_id": "AQADea0xGyJVUER4",
+          "file_size": 942,
+          "width": 57,
+          "height": 90
+        },
+        {
+          "file_id": "AgACAgEAAxkBAAICMGUJ3hTaUQYNk4H3A8gIDKhaoYiKAAJ5rTEbIlVQRIUBimcn_9CAAQADAgADbQADMAQ",
+          "file_unique_id": "AQADea0xGyJVUERy",
+          "file_size": 16514,
+          "width": 203,
+          "height": 320
+        },
+        {
+          "file_id": "AgACAgEAAxkBAAICMGUJ3hTaUQYNk4H3A8gIDKhaoYiKAAJ5rTEbIlVQRIUBimcn_9CAAQADAgADeAADMAQ",
+          "file_unique_id": "AQADea0xGyJVUER9",
+          "file_size": 101593,
+          "width": 507,
+          "height": 800
+        },
+        {
+          "file_id": "AgACAgEAAxkBAAICMGUJ3hTaUQYNk4H3A8gIDKhaoYiKAAJ5rTEbIlVQRIUBimcn_9CAAQADAgADeQADMAQ",
+          "file_unique_id": "AQADea0xGyJVUER-",
+          "file_size": 166128,
+          "width": 685,
+          "height": 1081
+        }
+      ]
+    }
+  }
+]

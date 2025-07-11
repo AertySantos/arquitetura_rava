@@ -1,0 +1,69 @@
+[
+  {
+    "update_id": 335992799,
+    "message": {
+      "message_id": 920,
+      "from": {
+        "id": 6477534976,
+        "is_bot": false,
+        "first_name": "Aerty",
+        "last_name": "Santos",
+        "language_code": "pt-br"
+      },
+      "chat": {
+        "id": 6477534976,
+        "first_name": "Aerty",
+        "last_name": "Santos",
+        "type": "private"
+      },
+      "date": 1714161625,
+      "sticker": {
+        "width": 512,
+        "height": 512,
+        "emoji": "😂",
+        "set_name": "FunkyGoose",
+        "is_animated": true,
+        "is_video": false,
+        "type": "regular",
+        "thumbnail": {
+          "file_id": "AAMCAgADGQEAAgOYZiwH2OaZx8hdBI1Ku96dfMfv474AAlgAA1KJkSN9jswOBzhLhgEAB20AAzQE",
+          "file_unique_id": "AQADWAADUomRI3I",
+          "file_size": 5512,
+          "width": 128,
+          "height": 128
+        },
+        "thumb": {
+          "file_id": "AAMCAgADGQEAAgOYZiwH2OaZx8hdBI1Ku96dfMfv474AAlgAA1KJkSN9jswOBzhLhgEAB20AAzQE",
+          "file_unique_id": "AQADWAADUomRI3I",
+          "file_size": 5512,
+          "width": 128,
+          "height": 128
+        },
+        "file_id": "CAACAgIAAxkBAAIDmGYsB9jmmcfIXQSNSrvenXzH7-O-AAJYAANSiZEjfY7MDgc4S4Y0BA",
+        "file_unique_id": "AgADWAADUomRIw",
+        "file_size": 11444
+      }
+    }
+  },
+  {
+    "update_id": 335992800,
+    "message": {
+      "message_id": 921,
+      "from": {
+        "id": 6477534976,
+        "is_bot": false,
+        "first_name": "Aerty",
+        "last_name": "Santos",
+        "language_code": "pt-br"
+      },
+      "chat": {
+        "id": 6477534976,
+        "first_name": "Aerty",
+        "last_name": "Santos",
+        "type": "private"
+      },
+      "date": 1714161655,
+      "text": "😂😘😜😝😏😝😒😭😢😳😝😢"
+    }
+  }
+]

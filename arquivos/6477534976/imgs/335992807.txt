@@ -1,0 +1,22 @@
+5 Exercícios (Bussab and Morettin, 2013, Cap. 5) a
+
+ENTREGA
+5.1) Utilize a linguagem R para simular o que é proposto no exercício; Ena viçi d
+
+Não é pra submeter
+5.2) Utilize a linguagem R para simular o que é proposto no exercício. Realize nenhum pdf.
+
+esse experimentos 10 vezes e calcule a média final do experimento;
+
+ 
+
+Quando for pra submeter código, tem
+5.7) Descrever em texto a resposta; manual no moodle .
+
+Referências
+
+Bussab, W. O. and Morettin, P. A. (2013). Estatística Básica. Saraiva, São Paulo,
+8 edition.
+
+ 
+

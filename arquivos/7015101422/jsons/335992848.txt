@@ -1,0 +1,27 @@
+[
+  {
+    "update_id": 335992848,
+    "message": {
+      "message_id": 1010,
+      "from": {
+        "id": 7015101422,
+        "is_bot": false,
+        "first_name": "André Luiz",
+        "language_code": "pt-br"
+      },
+      "chat": {
+        "id": 7015101422,
+        "first_name": "André Luiz",
+        "type": "private"
+      },
+      "date": 1714518402,
+      "voice": {
+        "duration": 7,
+        "mime_type": "audio/ogg",
+        "file_id": "AwACAgEAAxkBAAID8mYxeYJe50zfdTPutVJBfGyzkNzMAAJjBAAC17mRRaIhgKxSDDLXNAQ",
+        "file_unique_id": "AgADYwQAAte5kUU",
+        "file_size": 159771
+      }
+    }
+  }
+]

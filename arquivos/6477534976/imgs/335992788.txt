@@ -1,0 +1,14 @@
+ 
+
+EEis
+139
+Err
+141
+142
+
+o)
+
+ERROR e TR e RE
+updates="s(curl -s "https://api-telegram.org/bot$[botTOKEN) /getupdates?offset=Sfoffset)")”
+fecho sudo apt-get install jq
+

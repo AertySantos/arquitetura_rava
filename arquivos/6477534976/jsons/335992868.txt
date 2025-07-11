@@ -1,0 +1,29 @@
+[
+  {
+    "update_id": 335992868,
+    "message": {
+      "message_id": 1050,
+      "from": {
+        "id": 6477534976,
+        "is_bot": false,
+        "first_name": "Aerty",
+        "last_name": "Santos",
+        "language_code": "pt-br"
+      },
+      "chat": {
+        "id": 6477534976,
+        "first_name": "Aerty",
+        "last_name": "Santos",
+        "type": "private"
+      },
+      "date": 1715977577,
+      "document": {
+        "file_name": "step-to-step.txt",
+        "mime_type": "text/plain",
+        "file_id": "BQACAgEAAxkBAAIEGmZHvWlVbAtif18ciZpdYzostuWwAAIKBwACUmBBRiFcS1qrxlkpNQQ",
+        "file_unique_id": "AgADCgcAAlJgQUY",
+        "file_size": 1852
+      }
+    }
+  }
+]

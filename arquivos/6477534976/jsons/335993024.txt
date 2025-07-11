@@ -1,0 +1,29 @@
+[
+  {
+    "update_id": 335993024,
+    "message": {
+      "message_id": 1365,
+      "from": {
+        "id": 6477534976,
+        "is_bot": false,
+        "first_name": "Aerty",
+        "last_name": "Santos",
+        "language_code": "pt-br"
+      },
+      "chat": {
+        "id": 6477534976,
+        "first_name": "Aerty",
+        "last_name": "Santos",
+        "type": "private"
+      },
+      "date": 1716391683,
+      "voice": {
+        "duration": 2,
+        "mime_type": "audio/ogg",
+        "file_id": "AwACAgEAAxkBAAIFVWZODwPM26C-EJvt8J-chAXpZLizAALDAwACgqVwRrhLhfPEkFfpNQQ",
+        "file_unique_id": "AgADwwMAAoKlcEY",
+        "file_size": 47078
+      }
+    }
+  }
+]

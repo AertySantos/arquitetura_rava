@@ -1,0 +1,102 @@
+[
+  {
+    "update_id": 335992550,
+    "message": {
+      "message_id": 465,
+      "from": {
+        "id": 6477534976,
+        "is_bot": false,
+        "first_name": "Aerty",
+        "last_name": "Santos",
+        "language_code": "pt-br"
+      },
+      "chat": {
+        "id": 6477534976,
+        "first_name": "Aerty",
+        "last_name": "Santos",
+        "type": "private"
+      },
+      "date": 1695082277,
+      "photo": [
+        {
+          "file_id": "AgACAgEAAxkBAAIB0WUI5yUkk-EcDyMXwlK_0fjivYiVAAJTrDEbuQ1JRFf-h36L_7KHAQADAgADcwADMAQ",
+          "file_unique_id": "AQADU6wxG7kNSUR4",
+          "file_size": 896,
+          "width": 67,
+          "height": 90
+        },
+        {
+          "file_id": "AgACAgEAAxkBAAIB0WUI5yUkk-EcDyMXwlK_0fjivYiVAAJTrDEbuQ1JRFf-h36L_7KHAQADAgADbQADMAQ",
+          "file_unique_id": "AQADU6wxG7kNSURy",
+          "file_size": 8451,
+          "width": 240,
+          "height": 320
+        },
+        {
+          "file_id": "AgACAgEAAxkBAAIB0WUI5yUkk-EcDyMXwlK_0fjivYiVAAJTrDEbuQ1JRFf-h36L_7KHAQADAgADeAADMAQ",
+          "file_unique_id": "AQADU6wxG7kNSUR9",
+          "file_size": 39150,
+          "width": 600,
+          "height": 800
+        },
+        {
+          "file_id": "AgACAgEAAxkBAAIB0WUI5yUkk-EcDyMXwlK_0fjivYiVAAJTrDEbuQ1JRFf-h36L_7KHAQADAgADeQADMAQ",
+          "file_unique_id": "AQADU6wxG7kNSUR-",
+          "file_size": 67697,
+          "width": 960,
+          "height": 1280
+        }
+      ]
+    }
+  },
+  {
+    "update_id": 335992551,
+    "message": {
+      "message_id": 466,
+      "from": {
+        "id": 6477534976,
+        "is_bot": false,
+        "first_name": "Aerty",
+        "last_name": "Santos",
+        "language_code": "pt-br"
+      },
+      "chat": {
+        "id": 6477534976,
+        "first_name": "Aerty",
+        "last_name": "Santos",
+        "type": "private"
+      },
+      "date": 1695082428,
+      "photo": [
+        {
+          "file_id": "AgACAgEAAxkBAAIB0mUI57vhlogfr8YFltjFWu9VebKPAAJVrDEbuQ1JRFTL5lD3ZyVxAQADAgADcwADMAQ",
+          "file_unique_id": "AQADVawxG7kNSUR4",
+          "file_size": 1127,
+          "width": 67,
+          "height": 90
+        },
+        {
+          "file_id": "AgACAgEAAxkBAAIB0mUI57vhlogfr8YFltjFWu9VebKPAAJVrDEbuQ1JRFTL5lD3ZyVxAQADAgADbQADMAQ",
+          "file_unique_id": "AQADVawxG7kNSURy",
+          "file_size": 14224,
+          "width": 240,
+          "height": 320
+        },
+        {
+          "file_id": "AgACAgEAAxkBAAIB0mUI57vhlogfr8YFltjFWu9VebKPAAJVrDEbuQ1JRFTL5lD3ZyVxAQADAgADeAADMAQ",
+          "file_unique_id": "AQADVawxG7kNSUR9",
+          "file_size": 80185,
+          "width": 600,
+          "height": 800
+        },
+        {
+          "file_id": "AgACAgEAAxkBAAIB0mUI57vhlogfr8YFltjFWu9VebKPAAJVrDEbuQ1JRFTL5lD3ZyVxAQADAgADeQADMAQ",
+          "file_unique_id": "AQADVawxG7kNSUR-",
+          "file_size": 151484,
+          "width": 960,
+          "height": 1280
+        }
+      ]
+    }
+  }
+]

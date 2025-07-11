@@ -1,0 +1,23 @@
+[
+  {
+    "update_id": 335992844,
+    "message": {
+      "message_id": 1002,
+      "from": {
+        "id": 6477534976,
+        "is_bot": false,
+        "first_name": "Aerty",
+        "last_name": "Santos",
+        "language_code": "pt-br"
+      },
+      "chat": {
+        "id": 6477534976,
+        "first_name": "Aerty",
+        "last_name": "Santos",
+        "type": "private"
+      },
+      "date": 1714513828,
+      "text": "Oi"
+    }
+  }
+]
