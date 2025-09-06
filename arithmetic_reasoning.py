@@ -1,40 +1,55 @@
-import math
+import ast
+import operator
 
+class Arithmetic_Reasoning:
 
-class ArithmeticReasoning:
-    def __init__(self):
-        pass
+    # operadores permitidos
+    operators = {
+        ast.Add: operator.add,
+        ast.Sub: operator.sub,
+        ast.Mult: operator.mul,
+        ast.Div: operator.truediv,
+        ast.Pow: operator.pow,
+        ast.Mod: operator.mod,
+    }
 
-    # Operações básicas
-    def add(self, a, b):
-        return a + b
+    # substituições de texto
+    replacements = {
+        "x": "*",
+        "X": "*",
+        "vezes": "*",
+        "÷": "/",
+        ":": "/",
+        "dividido por": "/",
+        "mais": "+",
+        "menos": "-",
+        "elevado a": "**",
+    }
 
-    def subtract(self, a, b):
-        return a - b
+    def _preprocess(self, expr: str) -> str:
+        expr = expr.lower()
+        for k, v in self.replacements.items():
+            expr = expr.replace(k, v)
+        return expr
 
-    def multiply(self, a, b):
-        return a * b
+    def _eval_node(self, node):
+        if isinstance(node, ast.Num):  # Python <3.8
+            return node.n
+        elif isinstance(node, ast.Constant):  # Python 3.8+
+            return node.value
+        elif isinstance(node, ast.BinOp):
+            left = self._eval_node(node.left)
+            right = self._eval_node(node.right)
+            op_type = type(node.op)
+            if op_type in self.operators:
+                return self.operators[op_type](left, right)
+            else:
+                raise ValueError("Operador não permitido")
+        else:
+            raise ValueError("Expressão inválida")
 
-    def divide(self, a, b):
-        if b == 0:
-            return "Erro: divisão por zero"
-        return a / b
+    def evaluate(self, expr: str):
+        expr = self._preprocess(expr)
+        tree = ast.parse(expr, mode="eval")
+        return self._eval_node(tree.body)
 
-    # Áreas
-    def area_square(self, side):
-        return side ** 2
-
-    def area_rectangle(self, length, width):
-        return length * width
-
-    def area_circle(self, radius):
-        return math.pi * (radius ** 2)
-
-
-# Exemplo de uso
-calc = ArithmeticReasoning()
-
-print("Soma:", calc.add(5, 3))
-print("Divisão:", calc.divide(10, 2))
-print("Área do quadrado:", calc.area_square(4))
-print("Área do círculo:", calc.area_circle(3))

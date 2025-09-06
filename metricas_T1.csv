@@ -1,0 +1,88 @@
+ID;TipoEntrada_x;T_Envio;T_Resposta;TempoSeg;Entrada_x;Saida;match;Similaridade_Entrada;TipoEntrada_y;Entrada_y;SaidaEsperada;Similaridade_Resposta;Classificacao
+6477534976;T1;1756853135.1341124;1756853139.6642962;4.53;Boa noite!;Boa noite! Está precisando de algo?;Boa noite!;1.0;T1;Boa noite!;Boa noite! Está precisando de algo?;0.99999994;Preciso
+6477534976;T1;1756853156.9138422;1756853160.6655016;3.75;Bom dia!;Bom dia! Como posso te ajudar hoje?;Bom dia!;1.0;T1;Bom dia!;Bom dia! Está precisando de algo?;0.6739882;Preciso
+6477534976;T1;1756853167.7626662;1756853312.234195;144.47;Qual a pena final de Ronaldo?;"Baseado no texto fornecido, a pena final para Ronaldo é de **6 anos, 2 meses e 20 dias de reclusão**, no regime inicial fechado, além do pagamento de **30 dias-multa**.
+
+Os principais pontos que levaram a essa decisão foram:
+
+1. A reincidência específica do réu Ronaldo, que aumentou a pena em 1/3 (um terço).
+2. A confissão do réu Ronaldo, que proporcionou uma compensação parcial na pena.
+3. A associação criminosa especializada nesse tipo de crime, que justificou um aumento adicional na pena.
+4. A presença de maus antecedentes do réu Ronaldo.
+
+Essas circunstâncias resultaram na aplicação da pena máxima dentro do intervalo legal, conforme determinado pelo juiz.";Qual a pena final de ronaldo?;0.99999994;T3;Qual a pena final de ronaldo?; 6 anos, 2 meses e vinte dias de reclusão;0.51425385;Parcial
+6477534976;T1;1756853167.7626662;1756853312.234195;144.47;Qual a pena final de Ronaldo?;"Baseado no texto fornecido, a pena final para Ronaldo é de **6 anos, 2 meses e 20 dias de reclusão**, no regime inicial fechado, além do pagamento de **30 dias-multa**.
+
+Os principais pontos que levaram a essa decisão foram:
+
+1. A reincidência específica do réu Ronaldo, que aumentou a pena em 1/3 (um terço).
+2. A confissão do réu Ronaldo, que proporcionou uma compensação parcial na pena.
+3. A associação criminosa especializada nesse tipo de crime, que justificou um aumento adicional na pena.
+4. A presença de maus antecedentes do réu Ronaldo.
+
+Essas circunstâncias resultaram na aplicação da pena máxima dentro do intervalo legal, conforme determinado pelo juiz.";Qual a pena final de ronaldo?;0.99999994;T1;Qual a pena final de ronaldo?; 6 anos, 2 meses e vinte dias de reclusão;0.51425385;Parcial
+6477534976;T1;1756853379.8292272;1756853386.107941;6.28;Boa tarde.;Boa tarde! Em que posso ajudar?;Boa tarde!;0.9388403;T1;Boa tarde!;Boa tarde! Está precisando de algo?;0.6401731;Parcial
+6477534976;T1;1756853410.071656;1756853768.3867302;358.32;Coa apenas base de Ronaldo.;"Baseado nos detalhes fornecidos no texto, aqui está um resumo focado apenas no acusado Ronaldo:
+
+**Nome:** Ronaldo da Costa Souza
+
+**Crime:** Participação em qualificadora de concurso de agentes, envolvendo roubo de bens de valor R$ 251,37 em um escritório da sede administrativa de um estabelecimento.
+
+**Provas:**
+- Confissão do acusado Ronaldo.
+- Depoimento testemunhal.
+- Relatório de Inteligência Policial (fls. 345/346).
+
+**Antecedentes:**
+- Possui reincidência específica.
+- Condenação por roubo transitada em julgado (autos nº 0003617-75.2015.8.26.0637 – fls. 784).
+
+**Pena Original Fixada:**
+- 04 (quatro) anos e 08 (oito) meses de reclusão.
+- Pagamento de 23 (vinte e três) dias-multa.
+
+**Pena Final:**
+- 06 (seis) anos, 02 (dois) meses e 20 (vinte) dias de reclusão, no regime inicial fechado.
+- Pagamento de 30 (trinta) dias-multa, no mínimo unitário legal.
+
+**Justificativa:**
+- A reincidência específica aumentou a pena em 1/3 (um terço).
+- Considerando a confissão, a pena foi majorada em 1/6 (um sexto) em relação à pena original.
+- A presença de uma causa de aumento (associação criminosa especializada) justificou a aplicação da pena final.
+
+**Referência Jurídica:**
+- Artigo 155, §§ 1º e 4º, incisos I e IV, do Código Penal.
+
+Este resumo destaca os principais pontos relacionados ao acusado Ronaldo, incluindo o crime cometido, as provas apresentadas, os antecedentes penitenciários, a evolução da pena e a justificativa jurídica para a decisão final.";Qual a pena base de ronaldo?;0.8399273;T3;Qual a pena base de ronaldo?;pena base: 04 anos e 08 meses de reclusâo + 20 dias multa;0.54070824;Falha
+6477534976;T1;1756853410.071656;1756853768.3867302;358.32;Coa apenas base de Ronaldo.;"Baseado nos detalhes fornecidos no texto, aqui está um resumo focado apenas no acusado Ronaldo:
+
+**Nome:** Ronaldo da Costa Souza
+
+**Crime:** Participação em qualificadora de concurso de agentes, envolvendo roubo de bens de valor R$ 251,37 em um escritório da sede administrativa de um estabelecimento.
+
+**Provas:**
+- Confissão do acusado Ronaldo.
+- Depoimento testemunhal.
+- Relatório de Inteligência Policial (fls. 345/346).
+
+**Antecedentes:**
+- Possui reincidência específica.
+- Condenação por roubo transitada em julgado (autos nº 0003617-75.2015.8.26.0637 – fls. 784).
+
+**Pena Original Fixada:**
+- 04 (quatro) anos e 08 (oito) meses de reclusão.
+- Pagamento de 23 (vinte e três) dias-multa.
+
+**Pena Final:**
+- 06 (seis) anos, 02 (dois) meses e 20 (vinte) dias de reclusão, no regime inicial fechado.
+- Pagamento de 30 (trinta) dias-multa, no mínimo unitário legal.
+
+**Justificativa:**
+- A reincidência específica aumentou a pena em 1/3 (um terço).
+- Considerando a confissão, a pena foi majorada em 1/6 (um sexto) em relação à pena original.
+- A presença de uma causa de aumento (associação criminosa especializada) justificou a aplicação da pena final.
+
+**Referência Jurídica:**
+- Artigo 155, §§ 1º e 4º, incisos I e IV, do Código Penal.
+
+Este resumo destaca os principais pontos relacionados ao acusado Ronaldo, incluindo o crime cometido, as provas apresentadas, os antecedentes penitenciários, a evolução da pena e a justificativa jurídica para a decisão final.";Qual a pena base de ronaldo?;0.8399273;T1;Qual a pena base de ronaldo?;pena base: 04 anos e 08 meses de reclusâo + 20 dias multa;0.54070824;Falha
