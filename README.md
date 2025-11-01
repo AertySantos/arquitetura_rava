@@ -1,60 +1,232 @@
-# rAVA – Raciocínio Multimodal com IA  
+# rAVA — Arquitetura Neuro-Simbólica Multimodal
 
-Este repositório apresenta a evolução da arquitetura **rAVA**, originalmente concebida como um leitor cognitivo textual, agora aprimorada com tecnologias avançadas de Inteligência Artificial.  
+Aerty Santos  
 
-A nova versão do sistema integra diferentes formas de raciocínio e amplia seu escopo de atuação, mantendo a modularidade e escalabilidade do projeto inicial.  
-
----
-
-## 🔹 Arquitetura  
-
-O núcleo do sistema é coordenado por um **Reasoning Dispatcher**, responsável por orquestrar múltiplos módulos especializados:  
-
-- **Logical Reasoning** – raciocínio lógico e dedutivo  
-- **Statistics Reasoning** – análise estatística e inferências bayesianas  
-- **Arithmetic Reasoning** – cálculos e operações matemáticas  
-- **Look-Up Reasoning** – recuperação de informações estruturadas  
-
-Além disso, a arquitetura incorpora:  
-- Modelos de Linguagem de Grande Escala (LLMs)  
-- Bancos de dados vetoriais  
-- Agentes autônomos  
-- Mecanismos de recuperação semântica  
+| AVAILABLE DOWNLOADS |
+| :------------------: |
+| [APRESENTAÇÃO](#apresentação) |
+| [VIDEOS](#vídeos) |
 
 ---
 
-## 🔹 Funcionalidades  
-
-O sistema é capaz de processar **múltiplas modalidades de entrada** (texto, voz e imagens) e suporta diversas aplicações:  
-
-1. **Consultas em linguagem natural** sobre decisões judiciais (identificação de réus, penas, agravantes e fundamentos jurídicos).  
-2. **Extração automática de informações** a partir de imagens de documentos civis e registros processuais, via OCR e busca vetorial.  
-3. **Consultas por voz**, com reconhecimento automático da fala e contextualização jurídica.  
-4. **Reconstrução simbólica de partituras musicais** a partir de imagens digitalizadas, combinando visão computacional e redes neurais.  
-
----
-
-## 🔹 Análises Avançadas  
-
-- **Predição de decisões judiciais** com técnicas estatísticas bayesianas  
-- **Comparações quantitativas** entre categorias criminais  
-- **Agrupamento de estilos decisórios** e padrões semânticos em sentenças  
-- **Identificação de vieses judiciais** com métricas objetivas e análises linguísticas  
+## Index
+- [Descrição](#descrição)
+- [rAVA](#rava)
+- [Arquitetura Neuro-Simbólica Multimodal](#arquitetura-neuro-simbólica-multimodal)
+- [Requisitos do Sistema](#requisitos-do-sistema)
+- [Instruções para Replicar](#instruções-para-replicar)
+- [Crie um ambiente com o Miniconda e ative-o](#crie-um-ambiente-com-o-miniconda-e-ative-o)
+- [Testes Iniciais](#testes-iniciais)
+- [Resultados e Discussão](#resultados-e-discussão)
+- [Casos de Uso](#casos-de-uso)
+- [Conclusão](#conclusão)
+- [Vídeos](#vídeos)
+- [Referências](#referências)
 
 ---
 
-## 🔹 Interface Multimodal  
+## Descrição
+O **rAVA (Assistente Virtual para Iniciação em Robótica com Arduino)** evolui para uma **arquitetura neuro-simbólica multimodal**, integrando **aprendizado neural** e **razão simbólica** em um sistema cognitivo unificado.  
+O projeto tem como objetivo ampliar as capacidades de leitura e compreensão cognitiva do rAVA original — inicialmente textual — para um modelo capaz de **interpretar voz, imagem e texto** de forma integrada e explicável.  
 
-Uma interface acessível foi projetada para permitir que **juristas e cidadãos comuns** interajam com o sistema de forma simplificada:  
-- Consultas em linguagem natural  
-- Comandos de voz  
-- Acesso a informações jurídicas em formato não técnico  
+A proposta posiciona o rAVA como um **cérebro multimodal**, capaz de **raciocinar simbolicamente, aprender com dados e justificar suas inferências**, promovendo transparência e interpretabilidade em tarefas complexas como análise de decisões judiciais e processos educacionais.
 
 ---
 
-## 🚀 Objetivo  
+## rAVA
+O rAVA foi concebido a partir da necessidade de desenvolver um **sistema cognitivo interpretável, modular e adaptável**, que pudesse combinar inferência simbólica e aprendizado profundo de modo coeso.  
+Seu núcleo simbólico utiliza **ontologias e regras de inferência**, enquanto o módulo neural é responsável pelo **reconhecimento e abstração de padrões** em diferentes tipos de entrada, como texto, imagem e fala.
 
-A arquitetura **rAVA** posiciona-se como uma solução inovadora e ética para:  
-- **Ampliar o acesso à justiça**  
-- **Modernizar o Poder Judiciário brasileiro**  
-- **Apoiar a tomada de decisões** em diferentes contextos  
+Essa combinação promove **explicabilidade e aprendizado contínuo**, consolidando o rAVA como uma **arquitetura de referência em Inteligência Artificial neuro-simbólica**, aplicada à **análise semântica, representação de conhecimento e tomada de decisão assistida**.
+
+---
+
+## Arquitetura Neuro-Simbólica Multimodal
+
+O **rAVA** é estruturado em **quatro módulos cognitivos principais**, interligados por um núcleo de controle responsável pela coerência e integração do raciocínio global do sistema.
+
+- **Arithmetic Reasoning:**  
+  Responsável pela **manipulação e inferência quantitativa**, permitindo que o sistema realize **operações matemáticas, estimativas e deduções numéricas**.  
+  Esse módulo utiliza representações vetoriais e simbólicas para lidar com tarefas que envolvem medidas, contagens e proporções, sendo essencial para cenários de raciocínio lógico ou análise de dados estruturados.
+
+- **Statistic Reasoning:**  
+  Executa **inferências probabilísticas e correlações estatísticas**, integrando o aprendizado neural com abordagens bayesianas e modelagem de incerteza.  
+  É responsável por interpretar dados amostrais, calcular **tendências e confiabilidade**, e apoiar o sistema em tarefas que exigem **análise quantitativa e inferência preditiva**.
+
+- **Query Reasoning:**  
+  Atua na **interpretação e execução de consultas em linguagem natural**, transformando perguntas textuais em **operações simbólicas e semânticas** sobre bancos de conhecimento estruturados (como XML, ontologias e bases vetoriais).  
+  É o principal componente de **raciocínio semântico** do rAVA, capaz de decompor perguntas complexas e coordenar respostas explicáveis.
+
+- **Look-up Module:**  
+  Realiza **recuperação direta de conhecimento** a partir de fontes internas (ontologias, vetores de embeddings, documentos RAG) e externas (APIs, bancos de dados, repositórios XML).  
+  Esse módulo garante **eficiência e precisão** na busca de informações, permitindo ao rAVA fundamentar suas respostas em evidências e contextos reais.
+
+Esses módulos trabalham de forma **complementar e coordenada**, compondo um ecossistema cognitivo que combina **raciocínio lógico, inferência estatística e recuperação contextual de conhecimento**.  
+O ambiente foi configurado com **Miniconda**, garantindo **isolamento, portabilidade e reprodutibilidade** de todos os experimentos.
+
+---
+
+## Requisitos do Sistema
+- **Sistema operacional:** Ubuntu 22.04 LTS ou superior  
+- **Python:** 3.10 ou posterior  
+- **Gerenciador de ambiente:** Miniconda  
+- **Bibliotecas principais:**  
+  - `transformers`  
+  - `langchain`  
+  - `sentence-transformers`  
+  - `faiss-cpu`  
+  - `torch`  
+  - `peft`  
+  - `openai`  
+  - `fastapi`  
+  - `xmltodict`  
+  - `lxml`  
+
+- **Hardware recomendado:**  
+  - CPU com suporte a AVX  
+  - GPU NVIDIA A100 (para aceleração de modelos neurais)  
+  - Memória RAM mínima: 16 GB  
+
+---
+
+## Instruções para Replicar
+
+1. **Clone este repositório:**
+   ```bash
+   git clone https://github.com/AertySantos/rAVA.git
+   cd rAVA
+   ```
+
+2. **Crie um ambiente com o Miniconda e ative-o:**
+   ```bash
+   conda create -n rava python=3.10 -y
+   conda activate rava
+   ```
+
+3. **Instale as dependências:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Execute o módulo principal:**
+   ```bash
+   python3 main.py
+   ```
+
+5. **Para o modo multimodal com RAG (Retrieval Augmented Generation):**
+   ```bash
+   python3 chat_multimodal.py
+   ```
+
+---
+
+## Crie um ambiente com o Miniconda e ative-o
+
+Para garantir a reprodutibilidade e o isolamento do ambiente do **rAVA**, recomenda-se o uso do **Miniconda** como gerenciador de pacotes e ambientes virtuais.
+
+### 1. Verifique se o Miniconda está instalado
+```bash
+conda --version
+```
+
+Se o comando não retornar uma versão, instale o Miniconda a partir do site oficial:  
+🔗 [https://docs.conda.io/en/latest/miniconda.html](https://docs.conda.io/en/latest/miniconda.html)
+
+---
+
+### 2. Crie um novo ambiente para o rAVA
+```bash
+conda create -n rava python=3.10 -y
+```
+
+---
+
+### 3. Ative o ambiente
+```bash
+conda activate rava
+```
+
+---
+
+### 4. Instale as dependências do projeto
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+### 5. Verifique a instalação
+```bash
+python3 -m pip list
+```
+
+---
+
+### 6. Desative o ambiente (opcional)
+```bash
+conda deactivate
+```
+
+---
+
+## Testes Iniciais
+
+Foram realizados testes com entradas em **voz (T1)**, **imagem (T2)** e **texto (T3)**.  
+Os resultados médios obtidos estão resumidos abaixo:
+
+| Tipo de Entrada | Tempo Médio (s) | Taxa de Precisão (%) | Falhas (%) |
+| :--------------: | :--------------: | :------------------: | :---------: |
+| Voz (T1)         | 79.54            | 55.56                | 14.29       |
+| Imagem (T2)      | 78.57            | 84.38                | 12.50       |
+| Texto (T3)       | 11.11            | 90.88                | 7.14        |
+
+Esses resultados demonstram que o **módulo textual** apresenta maior precisão, enquanto os módulos de voz e imagem oferecem grande potencial de expansão em contextos multimodais.
+
+---
+
+## Resultados e Discussão
+
+Os experimentos mostraram que o rAVA:
+- Executa consultas complexas em **linguagem natural**;  
+- Realiza **inferência simbólica e estatística** sobre descritores estruturados;  
+- Integra múltiplas modalidades perceptivas (voz, imagem e texto);  
+- Oferece **explicabilidade** com rastreabilidade semântica e numérica.  
+
+O sistema representa um avanço em **inteligência cognitiva híbrida**, capaz de unir o raciocínio simbólico, o aprendizado neural e a inferência estatística sob uma mesma arquitetura.
+
+---
+
+## Casos de Uso
+
+### 1. Ensino de Robótica e Educação Tecnológica
+O rAVA atua como **assistente pedagógico interativo**, apoiando o aprendizado de conceitos de eletrônica e programação com **Arduino**.  
+Ele interpreta comandos em linguagem natural, realiza **inferência aritmética e lógica**, e gera explicações passo a passo sobre o funcionamento de sensores, atuadores e circuitos.  
+Dessa forma, contribui para o desenvolvimento do raciocínio lógico e da autonomia cognitiva de estudantes.
+
+### 2. Análise de Decisões Judiciais e Transparência
+No domínio jurídico, o rAVA é aplicado à **extração e interpretação de metadados de decisões judiciais**, combinando leitura neural de sentenças com **raciocínio simbólico e estatístico**.  
+A arquitetura permite **explicações interpretáveis** e identificação de **padrões, vieses e recorrências linguísticas**, auxiliando pesquisadores e magistrados na tomada de decisões fundamentadas.
+
+---
+
+## Conclusão
+O rAVA consolida-se como uma **arquitetura neuro-simbólica multimodal**, que combina **razão simbólica, inferência estatística e recuperação contextual** sob um mesmo núcleo cognitivo.  
+Sua estrutura modular e transparente o posiciona como um exemplo de **IA explicável e responsável**, capaz de operar de forma multimodal e autoexplicativa em diferentes domínios.  
+
+A convergência entre **Arithmetic Reasoning, Statistic Reasoning, Query Reasoning e Look-up** reafirma o rAVA como uma proposta sólida de **inteligência artificial cognitiva híbrida**, unindo percepção, lógica e explicação.
+
+---
+
+## Vídeos
+- [Demonstração do rAVA Multimodal](https://youtu.be/XXXXXXXX)
+
+
+---
+
+## Referências
+- Santos, A. *rAVA como um Cérebro Multimodal: Uma Arquitetura Neuro-Simbólica.* (2024).  
+- [LangChain Documentation](https://python.langchain.com)  
+- [Transformers Library — Hugging Face](https://huggingface.co/docs/transformers/index)  
+- [Retrieval-Augmented Generation (RAG)](https://arxiv.org/pdf/2005.11401.pdf)  
+- [Neuro-Symbolic AI: The Third Wave](https://arxiv.org/pdf/2103.13033.pdf)  
+```
