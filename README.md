@@ -35,9 +35,8 @@ A proposta posiciona o rAVA como um **cérebro multimodal**, capaz de **raciocin
 
 ## rAVA
 O rAVA foi concebido a partir da necessidade de desenvolver um **sistema cognitivo interpretável, modular e adaptável**, que pudesse combinar inferência simbólica e aprendizado profundo de modo coeso.  
-Seu núcleo simbólico utiliza **ontologias e regras de inferência**, enquanto o módulo neural é responsável pelo **reconhecimento e abstração de padrões** em diferentes tipos de entrada, como texto, imagem e fala.
 
-Essa combinação promove **explicabilidade e aprendizado contínuo**, consolidando o rAVA como uma **arquitetura de referência em Inteligência Artificial neuro-simbólica**, aplicada à **análise semântica, representação de conhecimento e tomada de decisão assistida**.
+![Arquitetura do rAVA](minha_imagem.png)
 
 ---
 
@@ -94,7 +93,7 @@ O ambiente foi configurado com **Miniconda**, garantindo **isolamento, portabili
 1. **Clone este repositório:**
    ```bash
    git clone https://github.com/AertySantos/rAVA.git
-   cd rAVA
+   cd arquitetura_rava
    ```
 
 2. **Crie um ambiente com o Miniconda e ative-o:**
@@ -112,12 +111,6 @@ O ambiente foi configurado com **Miniconda**, garantindo **isolamento, portabili
    ```bash
    python3 main.py
    ```
-
-5. **Para o modo multimodal com RAG (Retrieval Augmented Generation):**
-   ```bash
-   python3 chat_multimodal.py
-   ```
-
 ---
 
 ## Crie um ambiente com o Miniconda e ative-o
