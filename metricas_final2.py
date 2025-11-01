@@ -88,11 +88,11 @@ def calcular_metricas(df_tipo, gabarito_df, tipo):
     df_merged.to_csv(f"metricas_{tipo}.csv", sep=";", index=False, encoding="utf-8")
 
     return {
-        "Tipo de Entrada": tipo,
-        "Tempo Médio (s)": round(tempo_medio, 2),
-        "Taxa Precisão (%)": round(taxa_preciso, 2),
-        "Taxa Parcial (%)": round(taxa_parcial, 2),
-        "Taxa Falhas (%)": round(taxa_falhas, 2),
+        "tipo": tipo,
+        "tempo": round(tempo_medio, 2),
+        "precisao": round(taxa_preciso, 2),
+        "parcial": round(taxa_parcial, 2),
+        "falhas": round(taxa_falhas, 2),
     }
 
 

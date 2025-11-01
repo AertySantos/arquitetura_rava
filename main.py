@@ -160,7 +160,7 @@ class TelegramBot:
         f"{self.base_url}/sendMessage",
         json=payload)
         
-        print(r.status_code, r.text)
+        #print(r.status_code, r.text)
 
 
     def _safe(self, obj):
@@ -312,7 +312,7 @@ class TelegramBot:
         # with open(transcript_path, "w", encoding="utf-8") as w:
         #    w.write(msg)
 
-        print(audio_path)
+        #print(audio_path)
         self.log_audio(str(audio_path), msgini, msg, t_envio)
         self.send_mensagem(self.user_id, msg)
 
@@ -368,6 +368,6 @@ class TelegramBot:
 
 
 if __name__ == "__main__":
-    TOKEN = "seu token"
+    TOKEN = "seu token telegram"
     bot = TelegramBot(bot_token=TOKEN)
     bot.ouvir()

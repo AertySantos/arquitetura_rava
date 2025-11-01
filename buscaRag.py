@@ -7,7 +7,10 @@ from langchain_core.documents import Document
 from langchain.chains import ConversationalRetrievalChain
 from sentence_transformers import CrossEncoder
 from qwen_llm import QwenLLM
-
+import json
+import pandas as pd
+from tqdm import tqdm
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 
 class State(TypedDict):
     question: str
@@ -181,18 +184,17 @@ class Embedding_builder:
             similarity = doc.metadata.get("similarity")
             rerank_score = doc.metadata.get("rerank_score")
             final_score = doc.metadata.get("final_score")
+            cui = doc.metadata.get("CUI", "desconhecido")
         else:
-            source = None
-            similarity = None
-            rerank_score = None
-            final_score = None
+            source = similarity = rerank_score = final_score = cui = None
 
         return {
             "answer": result["answer"],
             "source": source,
             "similarity": similarity,
             "rerank_score": rerank_score,
-            "final_score": final_score
+            "final_score": final_score,
+            "CUI": cui
         }
 
 
@@ -208,7 +210,7 @@ if __name__ == "__main__":
         use_hybrid_score=True  # True = combina FAISS + Rerank
     )
 
-    pergunta = "ganglio axilar izquierdo?"
+    pergunta = "qual o codigo de quimioterapia adyuvante?"
     resposta = bot.run_graph(pergunta)
 
     print("\n📘 Resultado:")
@@ -218,5 +220,90 @@ if __name__ == "__main__":
     print(f"Similaridade (FAISS): {resposta['similarity']}%")
     print(f"Relevância (Reranker): {resposta['rerank_score']}")
     print(f"Score final combinado: {resposta['final_score']}")
+    print(f"CUI identificado: {resposta['CUI']}")  
+
+
+
+# =========================================================
+# Função de avaliação
+# =========================================================
+#def evaluate_benchmark(bot: Embedding_builder, benchmark_path: str = "./umls/beck/validation_wo_integrated.json", output_csv: str = "outputs/eval_results.csv"):
+    """
+    Loop de avaliação: percorre o benchmark JSON, roda o grafo e calcula métricas.
+    """
+    # 1️ Carrega o benchmark
+#    with open(benchmark_path, "r", encoding="utf-8") as f:
+#        dataset = json.load(f)
+
+#    results = []
+
+    # 2️ Loop principal
+#    for item in tqdm(dataset, desc=" Avaliando termos do benchmark"):
+#        termo = item["term"]
+#        gold_cuis = item["cuis"]
+
+#        try:
+#            result = bot.run_graph(termo)
+#            pred_cui = result["CUI"]
+
+#            acerto = pred_cui in gold_cuis
+#            results.append({
+ #               "term": termo,
+ #               "gold_cuis": ",".join(gold_cuis),
+ #               "pred_cui": pred_cui,
+ #               "acerto": int(acerto),
+ #               "similarity": result["similarity"],
+ #               "rerank_score": result["rerank_score"],
+ #               "final_score": result["final_score"]
+ #           })
+
+ #       except Exception as e:
+ #           results.append({
+ #               "term": termo,
+ #               "gold_cuis": ",".join(gold_cuis),
+ #               "pred_cui": "ERROR",
+ #               "acerto": 0,
+ #               "similarity": 0,
+ #               "rerank_score": 0,
+ #               "final_score": 0
+ #           })
+
+    # 3️ Cria dataframe e salva
+ #   df = pd.DataFrame(results)
+ #   df.to_csv(output_csv, index=False)
+
+    # 4️ Calcula métricas
+ #   y_true = [1] * len(df)  # todos os golds são válidos
+ #   y_pred = df["acerto"].tolist()
+
+ #   acc = accuracy_score(y_true, y_pred)
+ #   prec = precision_score(y_true, y_pred)
+ #   rec = recall_score(y_true, y_pred)
+ #   f1 = f1_score(y_true, y_pred)
+
+ #   print("\n📊 Resultados do Benchmark:")
+ #   print(f"Accuracy:  {acc:.3f}")
+ #   print(f"Precision: {prec:.3f}")
+ #   print(f"Recall:    {rec:.3f}")
+ #   print(f"F1-score:  {f1:.3f}")
+ #   print("=============================")
+
+ #   return df
+
+
+# =========================================================
+# Execução do benchmark
+# =========================================================
+#if __name__ == "__main__":
+#    bot = Embedding_builder(
+#        db_path="datavector/db_faiss",
+#        embedding_model="intfloat/multilingual-e5-base",
+#        rerank_model="mixedbread-ai/mxbai-rerank-base-v1",
+#        device="cuda:1",
+#        use_hybrid_score=True
+#    )
+
+#    df_resultados = evaluate_benchmark(bot, "./umls/beck/validation_wo_integrated.json", "outputs/eval_results.csv")
+
 
 

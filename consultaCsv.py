@@ -57,8 +57,13 @@ class ConsultaCSV:
         Converte a pergunta natural em SQL usando o LLM.
         """
         prompt = f"""
-        Você deve transformar a pergunta do usuário em uma consulta SQL válida 
-        para ser executada sobre um DataFrame chamado df (carregado a partir de um CSV).  
+        - O usuário fará perguntas em linguagem natural.  
+        - Sua tarefa é gerar uma consulta SQL válida para ser executada sobre um DataFrame chamado df (carregado a partir de um arquivo CSV) que tentara responder a pergunta.  
+        - Se a pergunta mencionar “tipo de pena”, interprete como a coluna Categoria.  
+        - Você pode considerar sinônimos e variações de linguagem natural ao mapear os termos para as colunas, desde que o significado seja compatível e inequívoco.
+        - Nunca confunda papéis processuais: termos como réu, acusado, autor, vítima, defensor não devem ser associados à coluna Juiz.
+        - Se a pergunta contiver termos ambíguos, irrelevantes ou sem correspondência clara com as colunas, retorne None em vez de tentar adivinhar. 
+        - Use apenas os nomes de colunas disponíveis no DataFrame.
 
         O DataFrame contém as seguintes colunas:  
             - Numero_processo  
@@ -73,17 +78,23 @@ class ConsultaCSV:
             - Reincidencia  
             - Confissao_Espontanea  
             - Conversao_da_Pena  
-    
+            - Categoria (Furto Qualificado, Roubo Qualificado, Furto Simples, Tráfico de Drogas)
+
         ⚠️ Regras:  
         1. Use sempre **nomes exatos das colunas acima**.  
         2. Sempre consulte a tabela `df`.  
-        3. Retorne **apenas o SQL puro**, sem explicações, sem markdown, sem ```sql.  
-        
+        3. Sempre que a pergunta mencionar um tipo específico de crime (ex: Furto Simples, Roubo Qualificado, etc.), 
+        adicione um filtro na coluna `Categoria`.  
+         
+        Retorne apenas as linhas ou colunas solicitadas.  
+        4. Retorne **apenas o SQL puro**, sem explicações, sem markdown, sem ```sql.  
+
         Pergunta do usuário: "{pergunta}"  
-        SQL:
         """
+        #4. **Nunca utilize funções agregadoras como AVG, SUM, COUNT, MAX, MIN, etc.** 
         qwen = Qwen()
         sql_query = qwen.enviar_msg(prompt)
+        #print(f"WWWW{prompt}")
         return sql_query.strip()
 
     def executar_sql(self, sql_query: str) -> pd.DataFrame:
@@ -105,13 +116,19 @@ class ConsultaCSV:
         """
         Função principal: transforma pergunta em SQL e retorna resultado.
         """
+        print(f"Mensagem: {mensagem}")
         sql_query = self.pergunta_para_sql(mensagem)
         #sql_query = "SELECT Pena_Definitiva FROM df WHERE Numero_processo = '0014485-64.2020.8.26.0564'"
+        if sql_query == "None":
+            return sql_query
         # Remove possíveis marcadores do LLM
         sql_query = re.sub(r"```sql|```|::", "", sql_query).strip()
         #print
         print(f"{sql_query}")  # debug
         resultado = self.executar_sql(sql_query)
+        # Garante que resultado seja DataFrame
+        if not isinstance(resultado, pd.DataFrame):
+            resultado = pd.DataFrame()
         return resultado
 
     def verificaResp(self, pergunta: str, resp: str) -> str:
@@ -137,34 +154,23 @@ class ConsultaCSV:
             - Confissao_Espontanea  
             - Conversao_da_Pena    
 
-        ⚠️ Regras:  
-        1. Sempre use os nomes exatos das colunas acima.  
+        ⚠️ Regras: 
+        0. Pena_Base, Pena_Definitiva, Pena_Base_Minimo valores em dias, 
+        1. Sempre use os nomes exatos das colunas acima, sem explicações, sem markdown, sem ```sql.
         """
 
-        if resp is None or str(resp).lower() in ["nan", "none", ""]:
-            # Prompt para quando não há resposta
-            prompt = f"""
-            {contexto}
+        
+        # Prompt para quando já existe uma resposta
+        prompt = f"""
+        {contexto}
 
-            A resposta retornou vazia ou NaN.  
-            Pergunta do usuário: "{pergunta}"  
+        Pergunta do usuário: "{pergunta}"  
+        Resposta extraída: "{resp}"  
 
-            Tarefa:  
-            - Verifique se a pergunta contém informações suficientes para extrair a resposta das colunas disponíveis.  
-            - Caso falte alguma informação essencial, peça educadamente ao usuário para fornecê-la, sem termos tecnicos (dataframe, colunas...).  
-            """
-        else:
-            # Prompt para quando já existe uma resposta
-            prompt = f"""
-            {contexto}
-
-            Pergunta do usuário: "{pergunta}"  
-            Resposta extraída: "{resp}"  
-
-             Tarefa:  
-            - Reformule a resposta acima em português formal.
-            - A resposta deve ser clara, direta e bem estruturada, sem termos técnicos (dataframe, colunas...).  
-            """
+        Tarefa:  
+        - Reformule a resposta acima em português formal.
+        - A resposta deve ser clara, direta e bem estruturada, sem termos técnicos (dataframe, colunas...). 
+        """
 
         qwen = Qwen()
         sql_query = qwen.enviar_msg(prompt)
