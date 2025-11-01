@@ -217,7 +217,7 @@ A convergência entre **Arithmetic Reasoning, Statistic Reasoning, Query Reasoni
 ---
 
 ## Referências
-- Santos, A. *rAVA como um Cérebro Multimodal: Uma Arquitetura Neuro-Simbólica.* (2024).  
+ 
 - [LangChain Documentation](https://python.langchain.com)  
 - [Transformers Library — Hugging Face](https://huggingface.co/docs/transformers/index)  
 - [Retrieval-Augmented Generation (RAG)](https://arxiv.org/pdf/2005.11401.pdf)  
