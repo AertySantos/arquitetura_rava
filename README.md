@@ -36,7 +36,7 @@ A proposta posiciona o rAVA como um **cérebro multimodal**, capaz de **raciocin
 ## rAVA
 O rAVA foi concebido a partir da necessidade de desenvolver um **sistema cognitivo interpretável, modular e adaptável**, que pudesse combinar inferência simbólica e aprendizado profundo de modo coeso.  
 
-![Arquitetura do rAVA](minha_imagem.png)
+![Arquitetura do rAVA](ravaup.png)
 
 ---
 
