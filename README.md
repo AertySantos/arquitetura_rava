@@ -26,7 +26,7 @@ Aerty Santos
 ---
 
 ## Descrição
-O **rAVA (Assistente Virtual para Iniciação em Robótica com Arduino)** evolui para uma **arquitetura neuro-simbólica multimodal**, integrando **aprendizado neural** e **razão simbólica** em um sistema cognitivo unificado.  
+O **rAVA ** evolui para uma **arquitetura neuro-simbólica multimodal**, integrando **aprendizado neural** e **razão simbólica** em um sistema cognitivo unificado.  
 O projeto tem como objetivo ampliar as capacidades de leitura e compreensão cognitiva do rAVA original — inicialmente textual — para um modelo capaz de **interpretar voz, imagem e texto** de forma integrada e explicável.  
 
 A proposta posiciona o rAVA como um **cérebro multimodal**, capaz de **raciocinar simbolicamente, aprender com dados e justificar suas inferências**, promovendo transparência e interpretabilidade em tarefas complexas como análise de decisões judiciais e processos educacionais.
@@ -191,12 +191,7 @@ O sistema representa um avanço em **inteligência cognitiva híbrida**, capaz d
 
 ## Casos de Uso
 
-### 1. Ensino de Robótica e Educação Tecnológica
-O rAVA atua como **assistente pedagógico interativo**, apoiando o aprendizado de conceitos de eletrônica e programação com **Arduino**.  
-Ele interpreta comandos em linguagem natural, realiza **inferência aritmética e lógica**, e gera explicações passo a passo sobre o funcionamento de sensores, atuadores e circuitos.  
-Dessa forma, contribui para o desenvolvimento do raciocínio lógico e da autonomia cognitiva de estudantes.
-
-### 2. Análise de Decisões Judiciais e Transparência
+### 1. Análise de Decisões Judiciais e Transparência
 No domínio jurídico, o rAVA é aplicado à **extração e interpretação de metadados de decisões judiciais**, combinando leitura neural de sentenças com **raciocínio simbólico e estatístico**.  
 A arquitetura permite **explicações interpretáveis** e identificação de **padrões, vieses e recorrências linguísticas**, auxiliando pesquisadores e magistrados na tomada de decisões fundamentadas.
 
