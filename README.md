@@ -1,6 +1,6 @@
-# rAVA — Arquitetura Neuro-Simbólica Multimodal
+<!-- # rAVA — Arquitetura Neuro-Simbólica Multimodal
 
-Aerty Santos  
+Aerty Pinto dos Santos  
 
 | AVAILABLE DOWNLOADS |
 | :------------------: |
@@ -211,7 +211,7 @@ A convergência entre **Arithmetic Reasoning, Statistic Reasoning, Query Reasoni
 
 ---
 
-## Referências
+## Referências -->
  
 - [LangChain Documentation](https://python.langchain.com)  
 - [Transformers Library — Hugging Face](https://huggingface.co/docs/transformers/index)  
